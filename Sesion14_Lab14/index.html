@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 14</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Mi Sitio</a>
+            <button id="nav-toggle" class="nav-toggle">&#9776;</button>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li>
+                    <a href="#servicios">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="#consultoria">Consultoría</a></li>
+                        <li><a href="#desarrollo">Desarrollo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="inicio">Inicio</section>
+    <section id="acerca">Acerca de</section>
+    <section id="servicios">Servicios</section>
+    <section id="contacto">Contacto</section>
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navContainer = document.querySelector('nav');
+
+        navToggle.addEventListener('click', () => {
+            navContainer.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>
